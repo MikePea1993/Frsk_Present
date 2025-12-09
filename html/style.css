@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  overflow: hidden;
+  font-family: "Special Elite", monospace;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#present-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.present-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Present Box - on top, left side */
+.present-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+
+.present-image {
+  width: 550px;
+  height: auto;
+  filter: drop-shadow(0 15px 40px rgba(0, 0, 0, 0.6));
+}
+
+/* Tag Wrapper - behind, right side, overlapping under the present */
+.tag-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+  margin-left: -40px;
+}
+
+/* Tag Container - rotated */
+.tag-container {
+  position: relative;
+  transform: rotate(-90deg);
+  transform-origin: center center;
+}
+
+.tag-image {
+  width: auto;
+  height: 750px;
+  filter: drop-shadow(0 8px 30px rgba(0, 0, 0, 0.5));
+}
+
+/* Tag Fields - positioned over the tag */
+.tag-fields {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* NO. Field - displays present number */
+.field-no {
+  position: absolute;
+  top: 56%;
+  right: 18%;
+}
+
+.field-no span {
+  font-family: "Courier Prime", monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: #3d2914;
+}
+
+/* Gift Selection - separate positioning */
+.field-gift-select {
+  position: absolute;
+  top: 40.9%;
+  right: 58.3%;
+  transform: rotate(90deg);
+  width: 130px;
+}
+
+.field-gift-select select {
+  width: 100%;
+  padding: 8px 10px;
+  font-family: "Courier Prime", monospace;
+  font-size: 11px;
+  color: #3d2914;
+  background: rgba(255, 248, 220, 0.95);
+  border: 1px solid #8b4513;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.field-gift-select select:focus {
+  background: rgba(255, 255, 240, 1);
+  border-color: #5c3310;
+}
+
+/* Open Button - separate positioning */
+.field-open-btn {
+  position: absolute;
+  top: 41%;
+  right: 57%;
+  transform: rotate(90deg);
+  width: 140px;
+}
+
+.field-open-btn button {
+  width: 95%;
+  padding: 11px 10px;
+  font-family: "Courier Prime", monospace;
+  font-size: 14px;
+  color: #3d2914;
+  background: rgba(255, 248, 220, 0.95);
+  border: 1px solid #8b4513;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.field-open-btn button:hover {
+  background: rgba(255, 255, 240, 1);
+  border-color: #5c3310;
+}
+
+.field-open-btn button:active {
+  background: rgba(245, 235, 200, 1);
+}
+
+/* TO Field - on the right side of original tag (TOP on screen after rotation) */
+.field-to {
+  position: absolute;
+  top: 72%;
+  right: -6%;
+  transform: rotate(90deg);
+  width: 190px;
+}
+
+.field-to input {
+  width: 100%;
+  padding: 10px 12px;
+  font-family: "Courier Prime", monospace;
+  font-size: 18px;
+  color: #3d2914;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  text-align: center;
+}
+
+.field-to input:focus {
+  background: transparent;
+  border: none;
+}
+
+/* FROM Field - below TO on original tag */
+.field-from {
+  position: absolute;
+  top: 69%; /* hehehe */
+  right: 38%;
+  transform: rotate(90deg);
+  width: 190px;
+}
+
+.field-from textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px 12px;
+  font-family: "Courier Prime", monospace;
+  font-size: 18px;
+  color: #3d2914;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  text-align: center;
+  resize: none;
+  line-height: 1.4;
+  overflow: hidden;
+}
+
+.field-from textarea:focus {
+  background: transparent;
+  border: none;
+}
+
+/* Placeholder styling */
+.field-from textarea::placeholder,
+.field-to input::placeholder {
+  color: #9a8a7a;
+  font-style: italic;
+}
+
+/* Mail Stamp */
+.field-stamp {
+  position: absolute;
+  top: 33%;
+  right: 10%;
+  transform: rotate(80deg);
+  width: 140px;
+}
+
+.stamp-image {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}

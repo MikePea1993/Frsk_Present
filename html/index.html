@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Present</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="present-container" class="hidden">
+        <div class="present-wrapper">
+            <!-- Present Image (in front, on the left) -->
+            <div class="present-box">
+                <img id="present-image" src="assets/EmptyPresent.png" alt="Present" class="present-image">
+            </div>
+
+            <!-- Christmas Tag (behind, on the right) -->
+            <div class="tag-wrapper">
+                <div class="tag-container">
+                    <img src="assets/ChristmasTag.png" alt="Christmas Tag" class="tag-image">
+
+                    <!-- Tag Fields positioned to match the image -->
+                    <div class="tag-fields">
+                        <!-- NO. Field -->
+                        <div class="field-no">
+                            <span>xxxx</span>
+                        </div>
+
+                        <!-- Gift Selection (create mode) -->
+                        <div class="field-gift-select" id="field-select">
+                            <select id="gift-select">
+                                <option value="">Select item...</option>
+                            </select>
+                        </div>
+
+                        <!-- Open Button (view mode) -->
+                        <div class="field-open-btn hidden" id="field-open">
+                            <button id="open-button" onclick="openPresent()">Open</button>
+                        </div>
+
+                        <!-- TO Field -->
+                        <div class="field-to">
+                            <input type="text" id="to-field" placeholder="Recipient..." maxlength="15">
+                        </div>
+
+                        <!-- FROM Field -->
+                        <div class="field-from">
+                            <textarea id="from-field" placeholder="Your name..." maxlength="37"></textarea>
+                        </div>
+
+                        <!-- Mail Stamp -->
+                        <div class="field-stamp">
+                            <img id="stamp-image" src="" alt="Stamp" class="stamp-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
