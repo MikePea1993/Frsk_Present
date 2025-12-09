@@ -49,10 +49,6 @@ Edit `shared/config.lua` to customize:
 
 ![Present UI](https://i.ibb.co/tPbf81SP/Vorp-3.png)
 
-## License
-
-Free to use and modify. Commercial redistribution/selling is prohibited. See LICENSE file.
-
 ## Support
 
-For issues or suggestions, open an issue on GitHub.
+For issues or suggestions, open a ticket in the Discord! https://discord.gg/j9Mt2BmjUu
