@@ -10,9 +10,9 @@ A Christmas present gifting system for RedM servers. Wrap gifts for other player
 - Beautiful UI with animated present opening
 - Supports both **VORP** and **RSG** frameworks
 
-## Dependencies
+## Can be used with
 
-- VORP Core + VORP Inventory **OR** RSG-Core + RSG-Inventory
+- VORP / RSG
 
 ## Installation
 
