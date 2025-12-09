@@ -47,11 +47,11 @@ Edit `shared/config.lua` to customize:
 
 ## Preview
 
-![Present UI](https://i.imgur.com/your-preview.png)
+![Present UI](https://i.ibb.co/tPbf81SP/Vorp-3.png)
 
 ## License
 
-Free to use and modify. Credit appreciated but not required.
+Free to use and modify. Commercial redistribution/selling is prohibited. See LICENSE file.
 
 ## Support
 
