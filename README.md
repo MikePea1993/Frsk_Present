@@ -1,5 +1,7 @@
 # Frsk_Present
 
+For issues or suggestions, open a ticket in the Discord! https://discord.gg/j9Mt2BmjUu
+
 A Christmas present gifting system for RedM servers. Wrap gifts for other players with personalized tags!
 
 ## Features
